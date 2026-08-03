@@ -1,0 +1,855 @@
+/*font-family: "abril-fatface", serif;  /* Use the Abril Fatface font; if unavailable, fall back to a generic serif font */
+/*font-weight: 400;                     /* Set the thickness of the font to normal (400) */
+/*font-style: normal;                   /* Use the standard upright version of the font (not italic or oblique) */
+ 
+ /* Navigation*/
+/*  
+  * {
+  border: 2px dotted yellow;
+ }          */
+
+body {
+ background-color: #000000;
+ width: 100vw;
+ 
+}
+
+/* ------------------- Navigation section -------------- */
+
+.main-navigation {
+  background-color: #000000;
+  display: flex;
+  height: 32px;
+  align-items: center;
+  justify-content: space-between;
+  padding:16px;
+}
+
+.nav-left{
+  display: flex;
+  position: relative;
+  color: #7a3e3e;
+  height: 100%;
+}
+.nav-center{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+ 
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  stroke-width: 5px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 120%;
+  font-family:Archivo;
+}
+
+/* ------------------- End Navigation section -------------- */
+
+/*---------------------------------------- Video Frames------------------------------------------------*/
+
+/*---------------------------------------- Video Frame 1------------------------------------------------*/
+
+.video-section-1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* padding: 200px; */
+
+}
+
+.video-1 {
+  width: 100%;
+  height: auto;
+}
+
+.inner-section-text-1{
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  padding: 0px 24px;
+  width: fit-content;
+  height: fit-content;
+  color: #ffffff;
+  z-index: 10;
+  
+}
+
+.flame-header{
+  text-align: center;
+  font-family: Archivo;
+  font-size:40px;
+
+  
+}
+a.flame-header{
+  text-decoration: none;
+
+}
+/* ------------------Hover Animation------------------------------*/
+
+.vehicles-from{
+   text-align: center;
+  font-family: Archivo;
+  font-weight:500;
+  font-size:24px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
+  height: 80px;
+}
+.animated-images {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;          /* allows images to wrap on smaller screens */
+  justify-content: center;  /* keeps them centered */
+  align-items: center;
+  column-gap: 16px;
+  row-gap: 40px;               /* better spacing for all screen sizes */
+  width: 100%;              /* full responsive width */
+  height: auto;
+}
+
+.location-image {
+  width: 32%;             /* base size */
+  height: auto;
+  object-fit: cover;
+  filter: brightness(0.9);
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+/* ------------------Hover Animation Section------------------------------*/
+
+
+
+.section-body-text{
+  text-align: center;
+  font-family: Archivo;
+  font-size: 24px;
+}
+
+/*-------------------- Hover Animation Section-------------------------------*/
+.sub-scrolls{
+  max-height: 0;              /* collapsed */
+  opacity: 100;                 /* invisible */       /* hide content when collapsed */
+  position: relative;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(142, 0, 0, 0.2);
+  z-index: 10;
+  border-radius: 8px;
+  text-align: center;
+  /* The feid in  */
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+
+.sub-scrolls a {
+  font-family: Archivo;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 1;
+}
+
+/* Hover effect */
+.sub-scrolls a:hover {
+  background-color: #ffffff;
+  border-radius: 80px;
+  color: #0c0b0b;
+  cursor: pointer;
+}
+
+/* Show dropdown when JS toggles this class */
+.sub-scrolls.show {
+  max-height: 500px;   /* adjust to fit your menu */
+  opacity: 1;
+}
+/*-------------------- Sub Scrolls-------------------------------*/
+
+
+/*---------------------------------------- Video Frame 1------------------------------------------------*
+
+
+/*---------------------------------------- Video Frame 2------------------------------------------------*/
+
+.video-section {
+  position: relative;
+  width: fit-content;
+  /* padding: 200px; */
+
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.inner-section-text{
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  color: #ffffff;
+  z-index: 10;
+  padding: 64px;
+}
+
+.section-header-1{
+  text-align: center;
+  font-family: Archivo;
+  font-size:80px;
+}
+
+.section-body-text{
+  text-align: center;
+  font-family: Archivo;
+  font-size: 24px;
+
+}
+
+/*---------------------------------------- Video Frame 2------------------------------------------------*/
+
+
+
+
+
+/*Back to top Button-------------------------------------*/
+#scrollBtn{
+  position: fixed;
+  display:none;
+  bottom: 5vh;
+  right: 5vw;
+   font-family: Archivo;
+  font-size: 8px;
+  color: transparent;
+  padding: 8px 8px;
+  z-index: 1;
+  z-index: 99; /* Make sure it does not overlap */
+  border-color: #ffffff;
+  background-color: transparent;
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 24px; /* Some padding */
+  border-radius: 16px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#scrollBtn:hover{
+  background-color: #ffffff;
+  border-radius: 16px;
+  color: #0c0b0b;
+
+}
+/*Back to top Button-------------------------------------*/
+
+
+
+/* ------------------------------------End dropdown content------------------------- */
+
+
+
+/* -------------------Start of Carousel-----------------------------------*/
+
+
+.mySlideshow-1 {
+  position: relative; /* anchors the arrows */
+  width: 100%;
+}
+
+/* Shared arrow styles */
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-10%);
+  font-size: 50px;
+  cursor: pointer;
+  color: rgb(239, 0, 0);
+  z-index: 10;
+  user-select: none;
+}
+
+/* Left arrow */
+.prev-button {
+  left: 2vw;
+}
+
+/* Right arrow */
+.next-button {
+  right: 2vw;
+}
+
+/* Hover effect */
+.prev-button:hover,
+.next-button:hover {
+  color: white;
+  transform: translateY(-50%) scale(1.2);
+  transition: 0.2s ease;
+}
+
+.Fullslide-1,
+.Fullslide-2 {
+  display: none;
+}
+/*-------------------------- !st slide set------------------------------------------*/
+.Fullslide-1,.Fullslide-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 0; /* optional: remove spacing */
+  width: 100%;
+  height: 80%;
+  
+}
+
+.Fullslide-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* keeps images clean and aligned */
+  display: block;
+  transition: transform 0.45s ease;
+  cursor: pointer;
+  padding-top: 16px;
+}
+.Fullslide-1 img:hover {
+  transform: scale(1.010);
+}
+.Fullslide-1 img:hover .slide-hover-overlay{
+  position: absolute;
+  top:80px
+
+}
+ 
+/*-------------------------- !st slide set------------------------------------------*/
+
+
+
+/* ------------------------------------Full Slides 2--------------------------------------------*/
+
+.Fullslide-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 0; /* optional: remove spacing */
+  width: 100%;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.Fullslide-2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover ; /* keeps images clean and aligned */
+  display: block;
+  transition: transform 0.45s ease;
+  cursor: pointer;
+  padding-top: 16px;
+}
+
+.Fullslide-2 img:hover {
+  transform: scale(1.030);
+}
+
+
+
+/* ------------------------------------Full Slides 2--------------------------------------------*/
+
+
+
+/*-------------------------------Slide Show section -------------------*/
+
+
+
+
+
+
+/* -----------------------Lightboxes + Images-----------------------------*/
+#lightbox-Ferrari{
+    position: fixed;
+    top: 0;
+    left: 0;                 /* reset */
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+
+    display: none;           /* center content */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#lightbox-image {
+    position: relative;      /* keeps close button inside */
+    display: inline-block;
+}
+
+.lightboximage {
+    max-width: 90vw;
+    max-height: 90vh;
+    height: auto;            /* avoid distortion */
+    display: block;
+}
+
+#close-button {
+    position: absolute;
+    top: -60px;
+    right: 10px;
+    font-family: archivo;
+    color: rgb(239, 0, 0);
+    font-size: 60px;
+    cursor: pointer;
+}
+
+#close-button:hover{
+  color: white;
+  transform: scale(1);
+  transition: 0.2s ease;
+}
+
+/*LightBox Text*/
+#lightbox-text-topic-Ferrari{
+    position: absolute;
+    top: -60px;
+    right: 250px;
+    font-family: archivo;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    cursor: pointer;
+    
+
+}
+/* -----------------------Lightboxes + Images-----------------------------*/
+
+
+
+
+
+
+
+
+
+ /*-----------------------------------------------3 Cars Sections--------------------------------------------------------------*/
+.Car-section {
+  position: relative;
+  width: fit-content;
+  /* padding: 200px; */
+
+}
+
+.car-image{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.45s ease;
+}
+.car-image:hover{
+  transform: scale(1.020);
+}
+
+
+.inner-section-car-text{
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  height: fit-content;
+  color: #ffffff;
+  z-index: 10;
+  padding: 32px;
+}
+
+.section-header{
+  text-align: center;
+  font-family: Archivo;
+  font-size:96px;
+}
+
+.section-body-text{
+  text-align: center;
+  font-family: Archivo;
+  font-size: 32px;
+
+}
+
+.Learn-more{
+position: relative;
+text-align: center;
+font-family: Archivo;
+font-size: 32px;
+cursor: pointer;
+border-radius: 16px;
+width: 35%;
+align-items: center;
+background-color: transparent;
+
+color: white;
+top: 90%;
+left: 50%;
+transform: translate(-50%, -10%);
+padding: 16px;
+background-color: transparent;
+
+}
+
+.learn-more,
+.learn-more a,
+a[data-fslightbox="videolightbox"] {
+  text-decoration: none;
+}
+
+.Learn-more:hover{
+  background-color: #ffffff;
+  border-radius: 16px;
+  color: #0c0b0b;
+
+}
+
+
+
+
+
+
+
+ /*3 Cars Sections*/
+
+
+
+ ---------/*Dual pics section*/-----------------------------------------------
+
+
+.dual-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: 100%;
+    padding: 16px 0;
+}
+
+.dual-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+ ---------/*Dual pics section*/-----------------------------------------------
+
+
+  ------------------------------/*Footer*/-----------------------------------
+  .footer-frame{
+    background-color: #1c1c1c; /* Black background */
+
+}
+  .footer-section {
+  background-color: #1c1c1c; /* Black background */
+  color: #f2f2f2;
+  padding: 40px 20px;
+  font-family: 'Archivo';
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#Shop{
+  color: #BC002D;
+}
+
+#Shop-subtext{
+  color: #f2f2f2;
+}
+
+#last-words{
+  color: #f2f2f2;
+}
+
+.cta-button-1,.email-button{
+  width: 100wh;
+  border-radius: 80px;
+  stroke-width: px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #ffffff;
+  background-color: #BC002D;
+  padding:16px;
+  align-content: center;
+  font-family: "abril-fatface", serif;
+  border: none;
+}
+ /*media query Tablet*/
+
+@media only screen and (max-width: 1100px) {
+
+  /* Title */
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 120%;
+    font-family: Archivo
+  }
+
+  /* Video Section 1 */
+  .video-section-1 {
+    position: relative;
+  }
+
+  .video-1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .inner-section-text-1 {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    padding: 0 24px;
+    color: #ffffff;
+    z-index: 10;
+    transform: translateY(-75px);
+  }
+
+  .section-header-1 {
+    text-align: center;
+    font-family: Archivo;
+    font-size: 32px;
+  }
+
+  .section-body-text {
+    text-align: center;
+    font-family: Archivo;
+    font-size: 16px;
+  }
+
+  /* Video Section 2 */
+  .video-section {
+    position: relative;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+  }
+
+  .inner-section-text {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    padding: 0 30px;
+    color: #ffffff;
+    z-index: 10;
+  }
+
+  .section-header {
+    text-align: center;
+    font-family: Archivo;
+    font-size: 32px;
+  }
+
+  /* Dropdown */
+  .Sub-scrolls {
+    max-height: 0;
+    opacity: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(142, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+  }
+
+  .Sub-scrolls.show {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  .Sub-scrolls a {
+    font-family: Archivo;
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .learn-more {
+    width: 40%;
+  }
+
+  .vehicles-from-header {
+    font-size: 32px;
+  }
+  .animated-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 4px;
+    width: 33vw;
+    column-gap: 80px;
+    row-gap: 40px; 
+    width: 100%;
+  }
+
+  .location-image {
+    width: 100%;
+    height: 200px;
+    filter: brightness(0.9);
+  }
+}
+
+
+/*---------------- phonemedia query----------------------*/
+
+@media only screen and (max-width: 430px) {
+
+  .title {
+    font-size: 16px;
+    text-align: center;
+    font-family: Archivo;
+    font-weight: 800;
+  }
+
+  /* Video Section 1 */
+
+
+.section-header{
+  text-align:center;
+  font-family:Archivo;
+  font-size:24px;
+}
+.section-header-1{
+  text-align:center;
+  font-family:Archivo;
+  font-size:32px;
+  
+}
+
+.section-body-text{
+  text-align: center;
+  font-family: Archivo;
+  font-size: 12px;
+
+}
+  
+
+
+  .flame-header {
+    text-align: center;
+    font-family: Archivo;
+    font-size: 24px;
+  }
+.Learn-more{
+position: relative;
+text-align: center;
+font-family: Archivo;
+font-size: 16px;
+cursor: pointer;
+border-radius: 16px;
+width: 35%;
+align-items: center;
+background-color: transparent;
+
+color: white;
+top: 90%;
+left: 50%;
+transform: translate(-50%, -10%);
+padding: 16px;
+background-color: transparent;
+
+}
+
+.learn-more,
+.learn-more a,
+a[data-fslightbox="videolightbox"] {
+  text-decoration: none;
+}
+
+.Learn-more:hover{
+  background-color: #ffffff;
+  border-radius: 16px;
+  color: #0c0b0b;
+
+}
+
+  /* Vehicles From */
+  .vehicles-from {
+    text-align: center;
+    font-family: Archivo;
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #000000;
+    height: 80px;
+    width: 100%;
+  }
+
+  .vehicles-from-header {
+    font-size: 24px;
+  }
+
+  /* Animated Images */
+  .animated-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 4px;
+    width: 33vw;
+    column-gap: 80px;
+    row-gap: 40px; 
+    width: 100%;
+  }
+
+  .location-image {
+    width: 100%;
+    height: 200px;
+    filter: brightness(0.9);
+  }
+
+ .sub-scrolls{
+  max-height: 0;              /* collapsed */
+  opacity: 100;                 /* invisible */       /* hide content when collapsed */
+  position: relative;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(142, 0, 0, 0.2);
+  z-index: 10;
+  border-radius: 8px;
+  text-align: center;
+  /* The feid in  */
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+
+.sub-scrolls a {
+  font-family: Archivo;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 1;
+}
+
+/* Hover effect */
+.sub-scrolls a:hover {
+  background-color: #ffffff;
+  border-radius: 80px;
+  color: #0c0b0b;
+  cursor: pointer;
+}
+
+/* Show dropdown when JS toggles this class */
+.sub-scrolls.show {
+  max-height: 500px;   /* adjust to fit your menu */
+  opacity: 1;
+}
+}
