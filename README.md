@@ -1,4 +1,4 @@
-# Frontend2
+# Kinnetica Automotive
 # What is this project?
 A project displaying a simplified landing page for an automotive database called Kinnetica Automotive. This project was developed in 10 weeks from my front-end class.
 
